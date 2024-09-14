@@ -1,0 +1,24 @@
+pwd: vị trí hiện tại trên cli
+ls: danh sách
+cd: chuyển vị trí thư mục cli
+touch: tạo file mới
+rm: xoá file
+mkdir: tạo thư mục mới
+rmdir, rm -rf: xoá thư mục
+echo "text": in ra đoạn text cần nhập
+echo "text" > temp.txt: import nội dung vào file
+echo "text" >> temp.txt: import thêm nội dung vào file mà không xoá nội dung cũ
+cat: in ra nội dung file
+cat file.txt | more
+cat file.txt | less
+cp: sao chép
+mv: di chuyển
+locate: tìm file/folder
+man command: thực thi
+which: search service locate
+alias temp="ls -a": chuyển lệnh "ls -a" thành "temp"
+history -d: lịch sử các lệnh cli
+
+
+
+
