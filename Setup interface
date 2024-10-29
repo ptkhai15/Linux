@@ -1,0 +1,11 @@
+#Open file interface
+nano /etc/network/interfaces
+#Config interface
+auto eth0
+iface eth0 inet static
+  address ip
+  netmask subnet
+  gateway ip-gateway
+  dns-nameservers 8.8.8.8 1.1.1.1
+#Restart network service
+systemctl restart networking
