@@ -9,3 +9,17 @@ iface eth0 inet static
   dns-nameservers 8.8.8.8 1.1.1.1
 #Restart network service
 systemctl restart networking
+
+#open the configuration file
+sudo nano /etc/netplan/*.yaml
+#Update the configuration file as per your networking needs
+network:
+    Version: 2
+    Renderer: NetworkManager/ networkd
+    ethernets:
+       DEVICE_NAME:
+          Dhcp4: yes/no
+          Addresses: [IP_ADDRESS/NETMASK]
+          Gateway: GATEWAY
+          Nameservers:
+             Addresses: [NAMESERVER_1, NAMESERVER_2]
