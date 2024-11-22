@@ -20,6 +20,9 @@ network:
        DEVICE_NAME:
           Dhcp4: yes/no
           Addresses: [IP_ADDRESS/NETMASK]
-          Gateway: GATEWAY
+          Gateway(4): GATEWAY
           Nameservers:
              Addresses: [NAMESERVER_1, NAMESERVER_2]
+#Allow change
+sudo netplan try
+sudo netplan allow
