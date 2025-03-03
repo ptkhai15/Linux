@@ -1,0 +1,14 @@
+#Search auditd
+wajig search auditd
+#Install Auditd on the system
+apt-get install auditd
+#Confirm whether it is installed successfully or not
+auditctl -l
+#To see the audit logs of the tempdir write the below command
+tail -5  /var/log/audit/audit.log
+#Use the below command to get audit reports
+aureport
+#To see the Auditd config file type the below command
+vi /etc/audit/rules.d/audit.rules
+After permanently adding the rules in the file and saving it restart the auditd daemon for those changes to take effect.
+service auditd restart
